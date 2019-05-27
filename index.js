@@ -1,3 +1,5 @@
+const path = require('path');
+
 const express = require('express');
 
 const app = express();
@@ -9,8 +11,10 @@ app.set('port', process.env.PORT || 3000);
 
 
 //static files
+console.log();
 
-app.use(express.static())
+
+app.use(express.static(path.join(__dirname+'Public')));
 
 
 //Start the Server
