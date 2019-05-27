@@ -19,8 +19,7 @@ const server = app.listen(app.get('port'), () => {
 
 console.log('Servidor Activado en Puerto', app.get('port'));    
     
-    });  
-
+    }); 
 
 
 //webSockets
@@ -32,11 +31,10 @@ io.on('connection', (socket) => {
     console.log('New connection', socket.id);
     
     socket.on('chat:message', (data)=>{
-        console.log(data);
-        
+        io.sockets.emit('chat:message', data)
+        console.log(data);       
 
-    })
-
+    });
 
 });
 
