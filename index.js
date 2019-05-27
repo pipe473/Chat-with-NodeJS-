@@ -11,10 +11,8 @@ app.set('port', process.env.PORT || 3000);
 
 
 //static files
-console.log();
 
-
-app.use(express.static(path.join(__dirname+'Public')));
+app.use(express.static(path.join(__dirname,'Public')));
 
 
 //Start the Server
