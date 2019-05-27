@@ -10,7 +10,7 @@ app.set('port', process.env.PORT || 3000);
 
 //static files
 
-
+app.use(express.static())
 
 
 //Start the Server
