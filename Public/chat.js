@@ -10,7 +10,7 @@ let actions = document.getElementById('actions');
 
 btn.addEventListener('click', function () {
 
-    console.log('click');    
+    console.log(username.value, message.value); 
     
 });
 
