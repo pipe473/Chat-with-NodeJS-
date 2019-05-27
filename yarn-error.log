@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add socket.io
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  8.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, rmdir '/home/felipe/BOOTCAMP/Frontend-Angular/SocketChatApp/node_modules/.socket.io.DELETE/node_modules/debug'
+
+npm manifest: 
+  {
+    "name": "chat",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "Felipe Bedoya",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1",
+      "socket.io": "^2.2.0"
+    },
+    "devDependencies": {
+      "nodemon": "^1.19.1"
+    },
+    "description": ""
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
