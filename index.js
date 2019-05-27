@@ -28,8 +28,8 @@ console.log('Servidor Activado en Puerto', app.get('port'));
 const SocketIO = require('socket.io');
 const io = SocketIO(server);
 
-io.on('connection', () => {
-    console.log('New connection');  
+io.on('connection', (socket) => {
+    console.log('New connection', socket.id);  
 
 
 });
