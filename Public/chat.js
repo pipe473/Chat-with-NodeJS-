@@ -18,5 +18,7 @@ btn.addEventListener('click', function () {
     
 });
 
+socket.on('chat:nessage');
+
 
 

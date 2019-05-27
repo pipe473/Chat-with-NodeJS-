@@ -31,7 +31,7 @@ io.on('connection', (socket) => {
     console.log('New connection', socket.id);
     
     socket.on('chat:message', (data)=>{
-        io.sockets.emit('chat:message', data)
+        io.sockets.emit('chat:message', data);
         console.log(data);       
 
     });
